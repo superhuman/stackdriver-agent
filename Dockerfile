@@ -14,6 +14,7 @@ COPY collectd-gcm.conf.tmpl /opt/stackdriver/collectd/etc/collectd-gcm.conf.tmpl
 COPY collectd.conf.tmpl /opt/stackdriver/collectd/etc/collectd.conf.tmpl
 COPY run-agent.sh /usr/bin/run-agent.sh
 COPY configurator /opt/configurator
+COPY postgresql_default.conf /opt/stackdriver/collectd/share/collectd/postgresql_default.conf
 
 CMD ["run-agent.sh"]
 
