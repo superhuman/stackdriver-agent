@@ -1,7 +1,7 @@
 from debian:jessie
 
-LABEL org.label-schema.vcs-url="https://github.com/wikiwi/stackdriver-agent" \
-      org.label-schema.vendor=wikiwi.io \
+LABEL org.label-schema.vcs-url="https://github.com/superhuman/stackdriver-agent" \
+      org.label-schema.vendor=superhuman.com \
       org.label-schema.name=stackdriver-agent \
       io.wikiwi.license=MIT
 
