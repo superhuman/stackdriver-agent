@@ -34,6 +34,18 @@ cat <<EOL >> "${file}"
     Port "${port:-"5432"}"
     User "${user:-"postgres"}"
     $(test -n "${password}" && echo "Password \"${password}\"")
+
+    Query backends
+    Query transactions
+    Query queries
+    Query queries_by_table
+    Query query_plans
+    Query table_states
+    Query query_plans_by_table
+    Query table_states_by_table
+    Query disk_io
+    Query disk_io_by_table
+    Query disk_usage
   </Database>
 EOL
 no=$(expr ${no} + 1)
