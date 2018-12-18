@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['pull', 'gcr.io/superhuman-inc/github.com/superhuman/stackdriver-agent:latest']
+- name: 'gcr.io/cloud-builders/docker'
+  args: [
+            'build',
+            '-t', 'gcr.io/superhuman-inc/github.com/superhuman/stackdriver-agent:latest',
+            '--cache-from', 'gcr.io/superhuman-inc/github.com/superhuman/stackdriver-agent:latest',
+            '.'
+        ]
+images: ['gcr.io/superhuman-inc/github.com/superhuman/stackdriver-agent:latest']
